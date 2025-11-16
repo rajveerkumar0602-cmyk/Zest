@@ -1,0 +1,70 @@
+     body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #ffe3db;
+      margin: 0;
+      padding: 0;
+    }
+    .menu-header {
+      background: #ff7d5a;
+      color: #fff;
+      padding: 30px 0 10px 0;
+      text-align: center;
+    }
+    .menu-header h1 {
+      margin: 0;
+      letter-spacing: 2px;
+      font-size: 2.5em;
+    }
+    .menu-section {
+      max-width: 700px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+      padding: 30px 40px;
+    }
+    .menu-category {
+      color: #ff7d5a;
+      font-size: 1.3em;
+      border-bottom: 2px solid #ffd0bc;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      padding-bottom: 6px;
+      font-weight: bold;
+    }
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 13px 0;
+      border-bottom: 1px dashed #ffe3db;
+    }
+    .item-info {
+      max-width: 65%;
+    }
+    .item-name {
+      font-size: 1.1em;
+      color: #ff7d5a;
+      margin: 0;
+    }
+    .item-desc {
+      color: #7a6b6b;
+      font-size: 0.97em;
+      margin-top: 3px;
+      margin-bottom: 0;
+    }
+    .item-price {
+      font-size: 1.13em;
+      color: #f66100;
+      font-weight: bold;
+      white-space: nowrap;
+      align-self: center;
+    }
+    @media (max-width: 600px) {
+      .menu-section {
+        padding: 16px 6vw;
+      }
+      .menu-header h1 {
+        font-size: 1.5em;
+      }
+    }
