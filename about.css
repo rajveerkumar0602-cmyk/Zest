@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  background: #ffd1cc;
+  font-family: 'Courier New', Courier, monospace;
+  color: #212121;
+}
+
+/* Navbar */
+.navbar {
+  background: #888;
+  border-radius: 18px 18px 0 0;
+  width: 85%;
+  margin: 32px auto 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0 26px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  height: 64px;
+}
+
+.profile-pic {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 34px;
+  object-fit: cover;
+  background: #fff;
+  border: 2px solid #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.15rem;
+  background: #444;
+  padding: 7px 20px;
+  border-radius: 10px;
+  transition: background 0.2s, color 0.2s;
+  font-weight: bold;
+  border: none;
+  letter-spacing: 1px;
+}
+
+.nav-links a.active, .nav-links a:hover {
+  color: #fa3d3d;
+  background: #fff;
+  border: 2px solid #fa3d3d;
+}
+
+.brand-title {
+  text-align: center;
+  color: #fa3d3d;
+  font-size: 2.7rem;
+  margin: 16px 0 0 0;
+  letter-spacing: 2px;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* About Section */
+.about-section {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 38px rgba(0,0,0,0.09);
+  width: 82%;
+  margin: 38px auto 30px auto;
+  padding: 42px 36px 34px 36px;
+}
+
+.about-section h2 {
+  font-size: 2.2rem;
+  color: #fa3d3d;
+  margin-top: 0;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.about-section p {
+  font-size: 1.15rem;
+  margin-bottom: 18px;
+  line-height: 1.57;
+}
+
+.highlight {
+  background: #ffd1cc33;
+  padding: 20px 22px;
+  border-radius: 14px;
+  margin-top: 22px;
+  font-weight: 600;
+  color: #E35D5B;
+}
+
+.highlight ul {
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-left: 21px;
+  font-weight: normal;
+  color: #212121;
+}
+
+/* Footer */
+.footer-text {
+  background: #444;
+  color: #fff;
+  text-align: center;
+  padding: 18px 0;
+  border-radius: 0 0 16px 16px;
+  margin-top: 28px;
+  font-size: 1rem;
+}
