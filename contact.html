@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Contact Us</title>
+
+  <style>
+    body {
+      background: #f7f7f7;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    form {
+      background: #fff;
+      max-width: 420px;
+      margin: 40px auto;
+      padding: 32px 24px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.07);
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 16px;
+      letter-spacing: 1px;
+    }
+    label {
+      display: block;
+      font-weight: 600;
+      margin-top: 16px;
+      margin-bottom: 6px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 8px 12px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      margin-bottom: 14px;
+      font-size: 1rem;
+      box-sizing: border-box;
+      transition: border-color 0.2s;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus,
+    select:focus {
+      border-color: #3486eb;
+      outline: none;
+    }
+    .radio-group {
+      margin-bottom: 14px;
+    }
+    .radio-group label {
+      display: inline-block;
+      margin-right: 14px;
+      font-weight: normal;
+    }
+    textarea {
+      min-height: 80px;
+      resize: vertical;
+    }
+    button,
+    input[type="submit"],
+    input[type="reset"] {
+      padding: 8px 18px;
+      border-radius: 4px;
+      background: #3486eb;
+      color: #fff;
+      border: none;
+      font-size: 1rem;
+      margin-right: 8px;
+      cursor: pointer;
+    }
+    input[type="reset"] {
+      background: #aaa;
+    }
+    button:hover,
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      opacity: 0.92;
+    }
+  </style>
+
+
+</head>
+<body>
+  <div id="ContactUs">
+    <h1>Contact Zest</h1>
+    <form action="#">
+      <div class="form-shape">
+        <label for="query">Type of Query</label>
+        <select name="myQuery" id="query">
+          <option value="sel" selected>Select</option>
+          <option value="ord">Order Issues</option>
+          <option value="site">Site Issues</option>
+          <option value="fed">Complaint</option>
+          <option value="others">Other</option>
+        </select>
+      </div>
+      <div class="form-shape">
+        <label for="name">Name</label>
+        <input type="text" name="myName" id="name" placeholder="Enter your Name">
+      </div>
+      <div class="form-shape">
+        <label for="email">Email-Id</label>
+        <input type="email" name="myEmail" id="email" placeholder="Enter your email">
+      </div>
+      <div class="form-shape">
+        <label for="pho">Phone Number</label>
+        <input type="phone" name="myPhone" id="pho" placeholder="Enter your Phone no">
+      </div>
+      <div id="radio">
+        Are you a member of Zest:
+        Yes <input type="radio" name="eligible">
+        No <input type="radio" name="eligible">
+      </div>
+      <div class="form-shape">
+        <label for="message">Describe your query</label>
+        <textarea name="mesg" id="message" cols="30" rows="10"></textarea>
+      </div>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </div>
+</body>
+</html>
